@@ -3,7 +3,7 @@
 <div *ngFor = "let currentRecipe of recipes">
   <h3>{{currentRecipe.recipe}}</h3>
   <ul>
-    <li>{{currentRecipe.ingredients}}</li>
+    <li>{{currentRecipe.ingredients}}<button (click)="editRecipe()">Edit</button></li>
   </ul>
   <p>{{currentRecipe.instructions}}</p>
 </div>
